@@ -41,3 +41,7 @@ https://devtalk.nvidia.com/default/topic/1050427/jetson-nano/enabling-spidev-on-
  *
  */
 ```
+
+## License
+
+This repository is released under the GNU General Public License v2.0 because it includes the device tree source released under the GNU General Public License v2.0.
