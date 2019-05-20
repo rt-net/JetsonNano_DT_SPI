@@ -14,6 +14,7 @@ After downloading, just run:
 The difference between original and modified `tegra210-p3448-0002-p3449-0000-a02.dts`:  
 https://github.com/rt-net/JetsonNano_DT_SPI/commit/79d4698ac518ab4cc9662ae8bd7e282f56f31cab
 
+このツールの詳細については以下の記事で紹介しています。  
 The details of this tools are written in Japanese on this page:  
 https://www.rt-shop.jp/blog/archives/11277
 
