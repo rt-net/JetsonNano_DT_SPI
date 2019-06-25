@@ -9,6 +9,18 @@ After downloading, just run:
 ./run.sh
 ```
 
+## Usage
+
+The script doesn't depend on the NVIDIA SDK Manager. It downloads the reqirements from the NVIDIA's server by itself.
+
+1. Setup the Jetson Nano to be able to boot
+2. Turn the Jetson Nano into Recovery Mode
+3. Connect the Jetson Nano and the Linux PC with a USB cable
+4. Download [`rt-net/JetsonNano_DT_SPI`](https://github.com/rt-net/JetsonNano_DT_SPI) into the Linux PC (__not Jetson Nano__)
+    * `git clone https://github.com/rt-net/JetsonNano_DT_SPI`
+5. Run [`run.sh`](https://github.com/rt-net/JetsonNano_DT_SPI/blob/master/run.sh) and confirm that the file has flashed successfully
+    * `./run.sh`
+
 ## Information
 
 The difference between original and modified `tegra210-p3448-0002-p3449-0000-a02.dts`:  
