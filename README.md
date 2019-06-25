@@ -2,6 +2,8 @@
 
 unofficial script for Jetson Nano(L4T Jetson-Nano-Tegra210_Linux_R32.1.0_aarch64) to enable SPI1
 
+__Please don't forget to make the backup your data!__
+
 First, download this repository into your Ubuntu PC (not your Jetson Nano).  
 After downloading, just run:
 
