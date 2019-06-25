@@ -11,7 +11,7 @@ After downloading, just run:
 
 ## Usage
 
-The script doesn't depend on the NVIDIA SDK Manager. It downloads the reqirements from the NVIDIA's server by itself.
+The script doesn't depend on the NVIDIA SDK Manager. It downloads the reqirements from the NVIDIA's server by itself.  You don't have to install the NVIDIA SDK Manager to use this script.
 
 1. Setup the Jetson Nano to be able to boot
 2. Turn the Jetson Nano into Recovery Mode
