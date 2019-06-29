@@ -1,6 +1,6 @@
 # JetsonNano_DT_SPI
 
-unofficial script for Jetson Nano(L4T Jetson-Nano-Tegra210_Linux_R32.1.0_aarch64) to enable SPI1
+unofficial script for Jetson Nano(L4T Jetson-Nano-Tegra210_Linux_R32.1.0_aarch64) to enable SPI0 (SPI1 on Developer Kit's Pin 19, 21, 23 and 24)
 
 __Please don't forget to backup your data!__
 
@@ -9,6 +9,12 @@ After downloading, just run:
 
 ```sh
 ./run.sh
+```
+
+The scripts shows the following after flashing.
+
+```sh
+*** The [DTB] has been updated successfully. ***
 ```
 
 ## Usage
@@ -26,7 +32,11 @@ The script doesn't depend on the NVIDIA SDK Manager. It downloads the reqirement
 ## Information
 
 The difference between original and modified `tegra210-p3448-0002-p3449-0000-a02.dts`:  
-https://github.com/rt-net/JetsonNano_DT_SPI/commit/79d4698ac518ab4cc9662ae8bd7e282f56f31cab
+* https://github.com/rt-net/JetsonNano_DT_SPI/commit/79d4698ac518ab4cc9662ae8bd7e282f56f31cab
+* https://github.com/rt-net/JetsonNano_DT_SPI/commit/0124b15ea6e29a0a45246223b7c892aa39e20678
+
+SPI1 on J40 of Developer Kit is available from `/dev/spidev0.0`.
+Accroding to "[Jetson Nano Product Design Guide](https://developer.nvidia.com/embedded/dlc/jetson-nano-product-design-guide)" which was published on June 10th, 2019, SPI1(Pin 19, 21, 23 and 24 on Developer Kit) is connected to SPI0 on Tegra X1, not SPI1.  See section "9.2 SPI"(pp. 41).
 
 このツールの詳細については以下の記事で紹介しています。  
 The details of these tools are written in Japanese on this page:  
