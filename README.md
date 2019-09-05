@@ -2,7 +2,8 @@
 
 unofficial script for Jetson Nano(L4T Jetson-Nano-Tegra210_Linux_R32.1.0_aarch64) to enable SPI0 (SPI1 on Developer Kit's Pin 19, 21, 23 and 24)
 
-__Please don't forget to backup your data!__
+__Please don't forget to backup your data!__  
+__This script is tested only on L4T R32.1(not tested on > R32.1).  Details: [issue#5](https://github.com/rt-net/JetsonNano_DT_SPI/issues/5).__
 
 First, download this repository into your Ubuntu PC (not your Jetson Nano).  
 After downloading, just run:
