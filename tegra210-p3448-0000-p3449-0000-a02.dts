@@ -2498,7 +2498,7 @@
 
 			spi1_mosi_pc0 {
 				nvidia,pins = "spi1_mosi_pc0";
-				nvidia,function = "rsvd1";
+				nvidia,function = "spi1";
 				nvidia,pull = <0x1>;
 				nvidia,tristate = <0x0>;
 				nvidia,enable-input = <0x1>;
@@ -2506,7 +2506,7 @@
 
 			spi1_miso_pc1 {
 				nvidia,pins = "spi1_miso_pc1";
-				nvidia,function = "rsvd1";
+				nvidia,function = "spi1";
 				nvidia,pull = <0x1>;
 				nvidia,tristate = <0x0>;
 				nvidia,enable-input = <0x1>;
@@ -2514,7 +2514,7 @@
 
 			spi1_sck_pc2 {
 				nvidia,pins = "spi1_sck_pc2";
-				nvidia,function = "rsvd1";
+				nvidia,function = "spi1";
 				nvidia,pull = <0x1>;
 				nvidia,tristate = <0x0>;
 				nvidia,enable-input = <0x1>;
@@ -2522,7 +2522,7 @@
 
 			spi1_cs0_pc3 {
 				nvidia,pins = "spi1_cs0_pc3";
-				nvidia,function = "rsvd1";
+				nvidia,function = "spi1";
 				nvidia,pull = <0x2>;
 				nvidia,tristate = <0x0>;
 				nvidia,enable-input = <0x1>;
@@ -2530,7 +2530,7 @@
 
 			spi1_cs1_pc4 {
 				nvidia,pins = "spi1_cs1_pc4";
-				nvidia,function = "rsvd1";
+				nvidia,function = "spi1";
 				nvidia,pull = <0x2>;
 				nvidia,tristate = <0x0>;
 				nvidia,enable-input = <0x1>;
@@ -3068,7 +3068,9 @@
 		};
 
 		default {
-			gpio-input = <0xd8 0xc 0xd 0xe 0xf 0xe8 0x26 0x95 0x5 0xbc 0xbd 0xbe 0xc1 0xc2 0xa8 0xa9 0xc8 0xca 0x4d 0x4e 0x4c 0x4f 0x32 0x33 0x10 0x11 0x12 0x13 0x14 0x3a 0x3d 0x3e 0x41 0xe4>;
+			gpio-hog;
+			gpios = <0x10 0 0x11 0 0x12 0 0x13 0 0x14 0>;
+			gpio-input = <0xd8 0xc 0xd 0xe 0xf 0xe8 0x26 0x95 0x5 0xbc 0xbd 0xbe 0xc1 0xc2 0xa8 0xa9 0xc8 0xca 0x4d 0x4e 0x4c 0x4f 0x32 0x33 0x3a 0x3d 0x3e 0x41 0xe4>;
 			gpio-output-low = <0x97 0x98 0xcb 0x38 0x3b 0x3c 0x3f 0x40 0x42>;
 			gpio-output-high = <0x6 0xbb>;
 			linux,phandle = <0x3c>;
@@ -3632,6 +3634,18 @@
 				status = "disabled";
 				prod = <0x4 0xfff 0x44b>;
 			};
+		};
+		spi0_0 {
+				#address-cells = <0x1>;
+				#size-cells = <0x0>;
+				compatible = "spidev";
+				reg = <0x0>;
+				spi-max-frequency = <0x1312d00>;
+				nvidia,enable-hw-based-cs;
+				nvidia,cs-setup-clk-count = <0x1e>;
+				nvidia,cs-hold-clk-count = <0x1e>;
+				nvidia,rx-clk-tap-delay = <0x1f>;
+				nvidia,tx-clk-tap-delay = <0x0>;
 		};
 	};
 
