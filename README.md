@@ -32,7 +32,7 @@ The script doesn't depend on the NVIDIA SDK Manager. It downloads the reqirement
 
 ## Information
 
-The difference between original and modified `tegra210-p3448-0002-p3449-0000-a02.dts`:  
+The difference between original and modified `tegra210-p3448-0000-p3449-0000-a02.dts`:  
 * https://github.com/rt-net/JetsonNano_DT_SPI/commit/79d4698ac518ab4cc9662ae8bd7e282f56f31cab
 * https://github.com/rt-net/JetsonNano_DT_SPI/commit/0124b15ea6e29a0a45246223b7c892aa39e20678
 
