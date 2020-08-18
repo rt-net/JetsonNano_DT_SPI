@@ -1,3 +1,5 @@
+__Due to the release of the [Jetson-IO](https://docs.nvidia.com/jetson/l4t/#page/Tegra%2520Linux%2520Driver%2520Package%2520Development%2520Guide%2Fhw_setup_jetson_io.html) which is the tool to simplify the configuration of the I/Os exposed by the 40‑pin expansion header, this tool is not maintained anymore. L4T release 32.3 is the initial release containing the Jetson-IO.__
+
 # JetsonNano_DT_SPI
 
 unofficial script for Jetson Nano(L4T Jetson-Nano-Tegra210_Linux_R32.1.0_aarch64) to enable SPI0 (SPI1 on Developer Kit's Pin 19, 21, 23 and 24)
